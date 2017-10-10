@@ -1,0 +1,12 @@
+﻿  11_7.c
+d:\wonkwang univ\c-2\souce file\chapter_11\fileio\myheader.h(1): warning C4068: 알 수 없는 pragma입니다.
+d:\wonkwang univ\c-2\souce file\chapter_11\fileio\11_7.c(10): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' 선언을 참조하십시오.
+d:\wonkwang univ\c-2\souce file\chapter_11\fileio\11_7.c(11): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' 선언을 참조하십시오.
+d:\wonkwang univ\c-2\souce file\chapter_11\fileio\11_7.c(12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: 'fopen' 선언을 참조하십시오.
+d:\wonkwang univ\c-2\souce file\chapter_11\fileio\11_7.c(39): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: 'getch' 선언을 참조하십시오.
+  FileIO.vcxproj -> D:\Wonkwang Univ\C-2\Souce File\Chapter_11\Debug\FileIO.exe
+  FileIO.vcxproj -> D:\Wonkwang Univ\C-2\Souce File\Chapter_11\Debug\FileIO.pdb (Full PDB)

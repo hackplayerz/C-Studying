@@ -1,0 +1,5 @@
+﻿  10_8.c
+e:\wonkwang univ\c-2\souce file\chapter_10\구조체와 공용체\10_8.c(18): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'book *'입니다.
+e:\wonkwang univ\c-2\souce file\chapter_10\구조체와 공용체\10_8.c(18): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'book *'입니다.
+  구조체와 공용체.vcxproj -> E:\Wonkwang Univ\C-2\Souce File\Chapter_10\Debug\구조체와 공용체.exe
+  구조체와 공용체.vcxproj -> E:\Wonkwang Univ\C-2\Souce File\Chapter_10\Debug\구조체와 공용체.pdb (Full PDB)
