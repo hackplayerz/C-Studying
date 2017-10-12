@@ -2,12 +2,16 @@
 #include <stdio.h>
 
 void main() {
-	int F = 0;
-	float C = 100.0;
-	int i;
-	for (i = 100; i >= 0; i--) {
-		F = (9.0 / 5.0)*C + 32;
-		printf("%-3dºF 일때 %-3.2fºC이다.\n", F, C);
-		--C;
+	int F;
+	int C = 0;
+
+	for (F = 212; F >= 32; F--) {
+		printf("%d F일때 %.2fC이다.\t", F, (5.0 / 9.0)*(F - 32));
+		if (C <= 100) {
+			printf("%d C일때 %.2f F이다.\n", C, (9.0 / 5.0)*C + 32);
+		}
+		else
+			printf("\n");
+		C++;
 	}
 }
