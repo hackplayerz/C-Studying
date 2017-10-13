@@ -1,5 +1,6 @@
 /* 2017-09-21 printf() */
-#include "myheader.h"
+#include <stdio.h>
+#include <conio.h>
 
 int main(void){
 	int n = - 123, m = 123;
