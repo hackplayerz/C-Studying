@@ -1,23 +1,23 @@
-/* ½Ç½À5.6-2 1800³âºÎÅÍ 2012³â±îÁö À±³âÀ»	±¸ÇÏ¿© Ãâ·Â */
+/* ì‹¤ìŠµ5.6-2 1800ë…„ë¶€í„° 2012ë…„ê¹Œì§€ ìœ¤ë…„ì„	êµ¬í•˜ì—¬ ì¶œë ¥ */
 #include <stdio.h>						// Standard Input Output Header
-#define FIRST_YEAR 1800					// ¿¬µµÀÇ ½ÃÀÛ
-#define LAST_YEAR 2012					// ¿¬µµÀÇ ³¡
+#define FIRST_YEAR 1800						// ì—°ë„ì˜ ì‹œì‘
+#define LAST_YEAR 2012						// ì—°ë„ì˜ ë
 
 void main() {
 	int i, j = 0, num = 0;
-	int year[LAST_YEAR - FIRST_YEAR];	// À±³âÀ» ÀúÀå
+	int year[LAST_YEAR - FIRST_YEAR];			// ìœ¤ë…„ì„ ì €ì¥
 
-	printf("%d³âºÎÅÍ %d³â±îÁö À±³â ¸®½ºÆ®\n", FIRST_YEAR, LAST_YEAR);
+	printf("%dë…„ë¶€í„° %dë…„ê¹Œì§€ ìœ¤ë…„ ë¦¬ìŠ¤íŠ¸\n", FIRST_YEAR, LAST_YEAR);
 	for (i = FIRST_YEAR; i <= LAST_YEAR; i++) {
 		if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0) {
 			year[++j] = i;
-		}								// À±³âÀ» °è»êÇÏ¿© year¿¡ ÀúÀå
+		}						// ìœ¤ë…„ì„ ê³„ì‚°í•˜ì—¬ yearì— ì €ì¥
 		num = j;
 	}
 	for (j = 1; j <= num; j++) {
 		printf("%d	", year[j]);
 		if (j % 10 == 0)
 			printf("\n");
-	}									// À±³âÀ» Ãâ·Â 10°³¾¿ ÁÙ¹Ù²Ş
+	}							// ìœ¤ë…„ì„ ì¶œë ¥ 10ê°œì”© ì¤„ë°”ê¿ˆ
 	printf("\n");
 }
