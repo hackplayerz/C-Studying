@@ -1,27 +1,27 @@
-/*2017-10-11 ½Ç½À¿¹Á¦ 2 
-ÅØ½ºÆ® ÆÄÀÏÀ» ÀĞ¾îµé¿© °¢ ÇàÀÇ Ã¹¸Ó¸®¿¡ Çà¹øÈ£¸¦ µ¡ºÙ¿©¼­ È­¸éÀ¸·Î Ãâ·Â*/
+/*2017-10-11 ì‹¤ìŠµì˜ˆì œ 2 
+í…ìŠ¤íŠ¸ íŒŒì¼ì„ ì½ì–´ë“¤ì—¬ ê° í–‰ì˜ ì²«ë¨¸ë¦¬ì— í–‰ë²ˆí˜¸ë¥¼ ë§ë¶™ì—¬ì„œ í™”ë©´ìœ¼ë¡œ ì¶œë ¥*/
 #include <stdio.h>					//Standard Input Output Header
 #include <stdlib.h>					//Standard Library Header 
 
-int main(int argc, char *argv[])	//¸í·ÉÀÎ¼ö ¼±¾ğ
+int main(int argc, char *argv[])			//ëª…ë ¹ì¸ìˆ˜ ì„ ì–¸
 {
 	char buffer[74 + 1];
 	int line = 1;
 	FILE *stream;
 
-	if (argc <= 1)					//¸í·ÉÀÎ¼ö°¡ ¾øÀ»¶§
+	if (argc <= 1)					//ëª…ë ¹ì¸ìˆ˜ê°€ ì—†ì„ë•Œ
 		puts("Usage: list filename"), exit(1);
 
 	stream = fopen(argv[1], "r+");
-									//¸í·ÉÀÎ¼öÆÄÀÏ ´ëÀÔ
+							//ëª…ë ¹ì¸ìˆ˜íŒŒì¼ ëŒ€ì…
 	if (stream == NULL)
 		puts("File not found !"), exit(1);
-									//ÆÄÀÏÀÌ ¾øÀ»¶§
+							//íŒŒì¼ì´ ì—†ì„ë•Œ
 	while (!feof(stream)) {
 		if (fgets(buffer, 74 + 1, stream) == NULL)
 			break;
 		printf("%3d: %s", line++, buffer);
-	}								//ÆÄÀÏ³»¿ë Ãâ·Â
+	}						//íŒŒì¼ë‚´ìš© ì¶œë ¥
 
 	return 0;
 }
