@@ -1,11 +1,11 @@
-/* 2017-10-18 ½Ç½À¿¹Á¦3 */
+/* 2017-10-18 ì‹¤ìŠµì˜ˆì œ3 */
 #include <stdio.h>							// Standard Input Output Header
 #include <conio.h>							// Console Input Output Header
 #pragma warning (disable:4996)
 
 void main() {
-	char input[100];						// °¡Àú¿Ã ¹®ÀÚ¸¦ ÀúÀåÇÒ º¯¼ö ¼±¾ğ
-				/* °¡Àú¿Â ¹®ÀÚ¸¦ °¢°¢ÀÇ º¯¼ö¿¡ ´ëÀÔ */
+	char input[100];						// ê°€ì €ì˜¬ ë¬¸ìë¥¼ ì €ì¥í•  ë³€ìˆ˜ ì„ ì–¸
+				/* ê°€ì €ì˜¨ ë¬¸ìë¥¼ ê°ê°ì˜ ë³€ìˆ˜ì— ëŒ€ì… */
 	char inteager[40];						
 	char upper[40];							
 	char down[40];
@@ -13,10 +13,10 @@ void main() {
 
 	int i, in = 0, d = 0, u = 0, e = 0;
 
-	printf("ÀÔ·Â :");
-	gets_s(input,sizeof(input));			// »ç¿ëÀÚ·ÎºÎÅÍ ¹®ÀÚ¸¦ ¹Ş¾Æ¿È
+	printf("ì…ë ¥ :");
+	gets_s(input,sizeof(input));					// ì‚¬ìš©ìë¡œë¶€í„° ë¬¸ìë¥¼ ë°›ì•„ì˜´
 
-	for (i = 0; input[i] != NULL; i++) {	// »ç¿ëÀÚ·ÎºÎÅÍ ¹Ş¾Æ¿Â °ªµéÀ» ºĞ·ù
+	for (i = 0; input[i] != NULL; i++) {				// ì‚¬ìš©ìë¡œë¶€í„° ë°›ì•„ì˜¨ ê°’ë“¤ì„ ë¶„ë¥˜
 		if ('0' <= input[i] && input[i] <= '9') {
 			inteager[in++] = input[i];
 		}
@@ -32,10 +32,10 @@ void main() {
 		inteager[in] = NULL;
 		down[d] = NULL;
 		upper[u] = NULL;
-		ect[e] = NULL;						// ºĞ·ùÇÑµÚ ¸¶Áö¸· °ª¿¡ ESCAPE¹®ÀÚ¸¦ ´ëÀÔÇÏ¿© ¹®ÀÚ¿­ÀÇ ³¡À» ¾Ë·ÁÁÜ
+		ect[e] = NULL;						// ë¶„ë¥˜í•œë’¤ ë§ˆì§€ë§‰ ê°’ì— ESCAPEë¬¸ìë¥¼ ëŒ€ì…í•˜ì—¬ ë¬¸ìì—´ì˜ ëì„ ì•Œë ¤ì¤Œ
 	}
-	printf("¼ıÀÚ : %s", inteager);
-	printf("¼Ò¹®ÀÚ : %s\n", down);
-	printf("´ë¹®ÀÚ : %s\n", upper);
-	printf("±âÅ¸ : %s\n", ect);				// ºĞ·ùÇÑ ¹®ÀÚ¸¦ Ãâ·Â
+	printf("ìˆ«ì : %s\n", inteager);
+	printf("ì†Œë¬¸ì : %s\n", down);
+	printf("ëŒ€ë¬¸ì : %s\n", upper);
+	printf("ê¸°íƒ€ : %s\n", ect);					// ë¶„ë¥˜í•œ ë¬¸ìë¥¼ ì¶œë ¥
 }
