@@ -1,6 +1,5 @@
 /* 2017-10-18 실습예제3 */
 #include <stdio.h>							// Standard Input Output Header
-#include <conio.h>							// Console Input Output Header
 #pragma warning (disable:4996)
 
 void main() {
