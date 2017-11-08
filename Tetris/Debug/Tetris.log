@@ -1,0 +1,19 @@
+﻿  tetris.c
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(124): error C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _kbhit. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(458): note: 'kbhit' 선언을 참조하십시오.
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(127): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: 'getch' 선언을 참조하십시오.
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(171): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: 'getch' 선언을 참조하십시오.
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(268): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\string.h(136): note: 'strcpy' 선언을 참조하십시오.
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(313): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: 'getch' 선언을 참조하십시오.
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(384): warning C4098: 'InputKey': 'void' 함수에서 값을 반환하고 있습니다.
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(395): warning C4098: 'InputKey': 'void' 함수에서 값을 반환하고 있습니다.
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(451): warning C4098: 'InputKey': 'void' 함수에서 값을 반환하고 있습니다.
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(458): warning C4098: 'InputKey': 'void' 함수에서 값을 반환하고 있습니다.
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(351): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: 'getch' 선언을 참조하십시오.
+e:\wonkwang univ\c-2\souce file\tetris\tetris.c(405): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: 'getch' 선언을 참조하십시오.
