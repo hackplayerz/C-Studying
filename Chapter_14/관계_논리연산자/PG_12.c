@@ -71,8 +71,7 @@ int ValidityCheck(char *str) {
 
 		else {							// 토큰이 미지수일때				
 			if (unknownQuantityFlag) {	// 이미 미지수가 있다면 연속 미지수로 에러
-				printf("연속 미지수로 에러. 잘못된 문자 인덱스: %d\n", i);
-				return 0;
+				continue;
 			}
 
 			else {						// 항 종료이므로 자연수감지, 연산자 감지 off 셋팅
