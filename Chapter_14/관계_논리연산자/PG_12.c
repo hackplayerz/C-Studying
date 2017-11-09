@@ -31,7 +31,7 @@ int ValidityCheck(char *str) {
 
 		if (str[i] >= '0'&&str[i] <= '9')
 			token = 0;		// 자연수일떄 token = 0
-		else if (str[i] == '+' || str[i] == '-' || str[i] == '/' || str[i] == '*')
+		else if (str[i] == '+' || str[i] == '-')
 			token = 1;		// 증감연산자일때 token = 1
 		else if (str[i] == 'x' || str[i] == 'y') {
 			token = 2;		// 미지수 토큰 설정
