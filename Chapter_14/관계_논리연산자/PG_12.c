@@ -25,7 +25,6 @@ main() {
 int ValidityCheck(char *str) {
 
 	int i, token, numberFlag = 0, operFlag = 0, unknownQuantityFlag = 0;
-	char unknownQuantity = 'x';
 
 	/* 토큰 분류 (자연수는 0, 연산자는 1, 미지수는 2) */
 	for (i = 0; str[i] != '\0'; i++) {
