@@ -1,4 +1,4 @@
-/* 2017-11-02 ¹æÁ¤½Ä °¨Áö ÇÁ·Î±×·¥ */
+/* 2017-11-02 ë°©ì •ì‹ ê°ì§€ í”„ë¡œê·¸ë¨ */
 #include <stdio.h>				// Standard Input Output Header
 #include <string.h>				// Standard String Header
 #include <conio.h>				// Console Input Output Header
@@ -9,17 +9,17 @@ main() {
 	char equation[50];
 
 	while (1) {
-		printf("¹æÁ¤½Ä ÀÔ·Â(exit ÀÔ·Â ½Ã Á¾·á) : ");
+		printf("ë°©ì •ì‹ ì…ë ¥(exit ì…ë ¥ ì‹œ ì¢…ë£Œ) : ");
 		gets(equation);
 
-		if (!strcmp(equation, "exit")) {	// »ç¿ëÀÚ°¡ "exit"À» Ä¡¸é ÇÁ·Î±×·¥ Á¾·á
-			printf("Á¾·áÇÕ´Ï´Ù.\n");
+		if (!strcmp(equation, "exit")) {	// ì‚¬ìš©ìê°€ "exit"ì„ ì¹˜ë©´ í”„ë¡œê·¸ë¨ ì¢…ë£Œ
+			printf("ì¢…ë£Œí•©ë‹ˆë‹¤.\n");
 			break;
 		}
 		else if (!ValidityCheck(equation))
-			printf("Àß¸øµÈ ¹æÁ¤½ÄÀÔ´Ï´Ù.\n\n");
+			printf("ì˜ëª»ëœ ë°©ì •ì‹ì…ë‹ˆë‹¤.\n\n");
 		else
-			printf("Á¤»óÀûÀÎ ¹æÁ¤½ÄÀÔ´Ï´Ù.\n\n");
+			printf("ì •ìƒì ì¸ ë°©ì •ì‹ì…ë‹ˆë‹¤.\n\n");
 	}
 }
 
@@ -28,60 +28,64 @@ int ValidityCheck(char *str) {
 	int i, token, numberFlag = 0, operFlag = 0, unknownQuantityFlag = 0;
 	char unknownQuantity = 'x';
 
-	/* ÅäÅ« ºĞ·ù (ÀÚ¿¬¼ö´Â 0, ¿¬»êÀÚ´Â 1, ¹ÌÁö¼ö´Â 2) */
+	/* í† í° ë¶„ë¥˜ (ìì—°ìˆ˜ëŠ” 0, ì—°ì‚°ìëŠ” 1, ë¯¸ì§€ìˆ˜ëŠ” 2) */
 	for (i = 0; str[i] != '\0'; i++) {	
 
 		if (str[i] >= '0'&&str[i] <= '9') 
-			token = 0;		// ÀÚ¿¬¼öÀÏ‹š token = 0
+			token = 0;		// ìì—°ìˆ˜ì¼Â‹Âš token = 0
 		else if (str[i] == '+' || str[i] == '-') 
-			token = 1;		// Áõ°¨¿¬»êÀÚÀÏ¶§ token = 1
+			token = 1;		// ì¦ê°ì—°ì‚°ìì¼ë•Œ token = 1
 		else if (str[i] == 'x') {
-			token = 2;		// ¹ÌÁö¼ö ÅäÅ« ¼³Á¤
+			token = 2;		// ë¯¸ì§€ìˆ˜ í† í° ì„¤ì •
 		}
 		else {
-			printf("Àß¸øµÈ ¹®ÀÚ ÀÔ·Â Àß¸øµÈ ¹®ÀÚ ÀÎµ¦½º: %d\n", i);
+			printf("ì˜ëª»ëœ ë¬¸ì ì…ë ¥ ì˜ëª»ëœ ë¬¸ì ì¸ë±ìŠ¤: %d\n", i);
 			return 0;
 		}
 		
-		if (token == 0) {	// ÀÚ¿¬¼ö ÅäÅ«			
-			if (numberFlag) // ÀÚ¿¬¼ö°¡ °¨ÁöµÈ »óÅÂÀÏ ¶§(ÀÚ¿¬¼ö ¿¬¼ÓÀÏ ¶§)
+		if (token == 0) {	// ìì—°ìˆ˜ í† í°			
+			if (numberFlag) // ìì—°ìˆ˜ê°€ ê°ì§€ëœ ìƒíƒœì¼ ë•Œ(ìì—°ìˆ˜ ì—°ì†ì¼ ë•Œ)
 				continue;
 			
-			else if (unknownQuantityFlag) {	// ¹ÌÁö¼ö µÚ¿¡ ÀÚ¿¬¼ö°¡ ¿ÔÀ» ¶§
-				printf("Ç×ÀÌ ½ÃÀÛµÇ´Âµ¥ ¿¬»êÀÚ°¡ ¾ø´Ù´Ï. Àß¸øµÈ ¹®ÀÚ ÀÎµ¦½º: %d\n", i);
-				return 0;		// ¾ÕÀÇ Ç×ÀÌ ³¡³­ µÚ ¿¬»êÀÚ°¡ ¾ø´Â °æ¿ì·Î ¿¡·¯
+			else if (unknownQuantityFlag) {	// ë¯¸ì§€ìˆ˜ ë’¤ì— ìì—°ìˆ˜ê°€ ì™”ì„ ë•Œ
+				printf("í•­ì´ ì‹œì‘ë˜ëŠ”ë° ì—°ì‚°ìê°€ ì—†ë‹¤ë‹ˆ. ì˜ëª»ëœ ë¬¸ì ì¸ë±ìŠ¤: %d\n", i);
+				return 0;		// ì•ì˜ í•­ì´ ëë‚œ ë’¤ ì—°ì‚°ìê°€ ì—†ëŠ” ê²½ìš°ë¡œ ì—ëŸ¬
 			}
 
 			else {
-				numberFlag = 1; //ÀÚ¿¬¼ö °¨Áö on ¼ÂÆÃ
-				operFlag = 0;	//Ç× ½ÃÀÛÀ¸·Î ¿¬»êÀÚ °¨Áö off ¼ÂÆÃ
+				numberFlag = 1; //ìì—°ìˆ˜ ê°ì§€ on ì…‹íŒ…
+				operFlag = 0;	//í•­ ì‹œì‘ìœ¼ë¡œ ì—°ì‚°ì ê°ì§€ off ì…‹íŒ…
 			}
 		}
-		else if (token == 1) {	// ¿¬»êÀÚ ÅäÅ«			
-			if (operFlag) {		// ¿¬»êÀÚ ´ÙÀ½¿¡ ¿¬»êÀÚ°¡ ¿À¸é ¿¡·¯
-				printf("¿¬¼Ó ¿¬»êÀÚ·Î ¿¡·¯. Àß¸øµÈ ¹®ÀÚ ÀÎµ¦½º: %d\n", i);
+		else if (token == 1) {	// ì—°ì‚°ì í† í°			
+			if (operFlag) {		// ì—°ì‚°ì ë‹¤ìŒì— ì—°ì‚°ìê°€ ì˜¤ë©´ ì—ëŸ¬
+				printf("ì—°ì† ì—°ì‚°ìë¡œ ì—ëŸ¬. ì˜ëª»ëœ ë¬¸ì ì¸ë±ìŠ¤: %d\n", i);
 				return 0;
 			}
 			else {
-				operFlag = 1;	// ¿¬»êÀÚ °¨Áö on ¼ÂÆÃ
+				operFlag = 1;	// ì—°ì‚°ì ê°ì§€ on ì…‹íŒ…
 				numberFlag = 0;
 				unknownQuantityFlag = 0;
-								// Ç× ½ÃÀÛÀÌ¹Ç·Î ÀÚ¿¬¼ö °¨Áö, ¹ÌÁö¼ö °¨Áö off ¼ÂÆÃ
+								// í•­ ì‹œì‘ì´ë¯€ë¡œ ìì—°ìˆ˜ ê°ì§€, ë¯¸ì§€ìˆ˜ ê°ì§€ off ì…‹íŒ…
 			}
 		}
 		
-		else {							// ÅäÅ«ÀÌ ¹ÌÁö¼öÀÏ¶§				
-			if (unknownQuantityFlag) {	// ÀÌ¹Ì ¹ÌÁö¼ö°¡ ÀÖ´Ù¸é ¿¬¼Ó ¹ÌÁö¼ö·Î ¿¡·¯
-				printf("¿¬¼Ó ¹ÌÁö¼ö·Î ¿¡·¯. Àß¸øµÈ ¹®ÀÚ ÀÎµ¦½º: %d\n", i);
+		else {							// í† í°ì´ ë¯¸ì§€ìˆ˜ì¼ë•Œ				
+			if (unknownQuantityFlag) {	// ì´ë¯¸ ë¯¸ì§€ìˆ˜ê°€ ìˆë‹¤ë©´ ì—°ì† ë¯¸ì§€ìˆ˜ë¡œ ì—ëŸ¬
+				printf("ì—°ì† ë¯¸ì§€ìˆ˜ë¡œ ì—ëŸ¬. ì˜ëª»ëœ ë¬¸ì ì¸ë±ìŠ¤: %d\n", i);
 				return 0;
 			}
 			
-			else {						// Ç× Á¾·áÀÌ¹Ç·Î ÀÚ¿¬¼ö°¨Áö, ¿¬»êÀÚ °¨Áö off ¼ÂÆÃ
+			else {						// í•­ ì¢…ë£Œì´ë¯€ë¡œ ìì—°ìˆ˜ê°ì§€, ì—°ì‚°ì ê°ì§€ off ì…‹íŒ…
 				unknownQuantityFlag = 1;
 				operFlag = 0;
 				numberFlag = 0;
 			}
 		}
+	}
+	if (token == 1) {					// ë§ˆì§€ë§‰í•­ì´ ì—°ì‚°ìì¼ì‹œ í•­ì— ì—ëŸ¬ê°€ ë°œìƒ 
+		printf("ë§ˆì§€ë§‰í•­ì´ ì—°ì‚°ìì…ë‹ˆë‹¤.");
+		return 0;
 	}
 	return 1;
 }
