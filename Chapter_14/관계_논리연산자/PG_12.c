@@ -70,7 +70,7 @@ int ValidityCheck(char *str) {
 		}
 
 		else {							// 토큰이 미지수일때				
-			if (unknownQuantityFlag) {	// 이미 미지수가 있다면 연속 미지수로 에러
+			if (unknownQuantityFlag) {
 				continue;
 			}
 
