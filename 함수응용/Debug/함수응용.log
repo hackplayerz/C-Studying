@@ -1,0 +1,5 @@
+﻿  PG_21.c
+d:\wonkwang univ\visual c\souce file\함수응용\pg_21.c(14): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: 'scanf' 선언을 참조하십시오.
+  함수응용.vcxproj -> D:\Wonkwang Univ\Visual C\Souce File\함수응용\Debug\함수응용.exe
+  함수응용.vcxproj -> D:\Wonkwang Univ\Visual C\Souce File\함수응용\Debug\함수응용.pdb (Full PDB)
