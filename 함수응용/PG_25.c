@@ -1,9 +1,6 @@
 /* 2017-11-23 Switch - case 문을 사용해 사칙연산을 계산하는 프로그램 */
 #include <stdio.h>
-int add(int a, int b);		// 합
-int sub(int a, int b);		// 차
-int mul(int a, int b);		// 곱
-int div(int a, int b);		// 나누기
+#include "oper.h"
 
 int main(void) {
 	int num_1, num_2, sum;
@@ -12,11 +9,6 @@ int main(void) {
 		printf("***프로그램을 종료하려면 'q'를 입력하세요.***\n\n");
 		printf("식을 쓰시오 : ");
 		scanf("%d %c %d", &num_1, &oper, &num_2);
-
-		if (getchar() == 'q') {
-			printf("프로그램을 종료합니다.\n");
-			return 0;
-		}
 
 		switch (oper)
 		{
@@ -40,16 +32,4 @@ int main(void) {
 	}
 
 	return 0;
-}
-int add(int a, int b) {
-	return a + b;
-}
-int sub(int a, int b) {
-	return a - b;
-}
-int mul(int a, int b) {
-	return a*b;
-}
-int div(int a, int b) {
-	return a / b;
 }
