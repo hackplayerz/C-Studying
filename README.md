@@ -1,4 +1,4 @@
-<img scr=",/img/wku.png" weight = "40%"><br>
+<img scr="./img/wku.png" weight = "40%"><br>
 # Wonkwang UNIV. Visual C
 
 ## Wonkwang Univ.Visual C Programming Source Code</br>
