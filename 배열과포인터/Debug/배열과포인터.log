@@ -1,0 +1,11 @@
+﻿  PG_22.c
+d:\wonkwang univ\visual c\souce file\배열과포인터\pg_22.c(30): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char *'입니다.
+d:\wonkwang univ\visual c\souce file\배열과포인터\pg_22.c(30): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+d:\wonkwang univ\visual c\souce file\배열과포인터\pg_22.c(30): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'float *'입니다.
+d:\wonkwang univ\visual c\souce file\배열과포인터\pg_22.c(30): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 4의 형식이 'double *'입니다.
+d:\wonkwang univ\visual c\souce file\배열과포인터\pg_22.c(33): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char *'입니다.
+d:\wonkwang univ\visual c\souce file\배열과포인터\pg_22.c(33): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+d:\wonkwang univ\visual c\souce file\배열과포인터\pg_22.c(33): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'float *'입니다.
+d:\wonkwang univ\visual c\souce file\배열과포인터\pg_22.c(33): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 4의 형식이 'double *'입니다.
+  배열과포인터.vcxproj -> D:\Wonkwang Univ\Visual C\Souce File\배열과포인터\Debug\배열과포인터.exe
+  배열과포인터.vcxproj -> D:\Wonkwang Univ\Visual C\Souce File\배열과포인터\Debug\배열과포인터.pdb (Full PDB)
