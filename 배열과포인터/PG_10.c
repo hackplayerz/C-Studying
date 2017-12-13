@@ -1,18 +1,28 @@
-/* 2017-11-30 다차원배열의 초기화 및 행의 크기가 생략된 2차원 배열 선언*/
+/* 2017-12-07 1차원 배열 포인터 */
 #include <stdio.h>
+#include <string.h>
 
-void main()
-{
-	int array[][4] = { { 50, 80, 0 },{ 2, },{ 121, 0, 0 }, 1, 2 };
+void main() {
+	char string[12];
+	unsigned int i;
 
-	int i, j, size;
+	char *ptr;
+	strcpy(string, "Programming"); // 배열 초기화
 
-	size = sizeof(array) / sizeof(int) / 4;
+	ptr = string;       // 포인터 변수 초기화
 
-	for (i = 0; i < size; i++) {
-		for (j = 0; j < 4; j++)
-			printf("array[%d][%d] = %d\n", i, j, array[i][j]);
+	printf("ptr의 주소            : %d \n", &ptr);
+	printf("ptr이 가리키는 값     : %c \n", *ptr);
+	printf("ptr이 가리키는 문자열 : %s \n\n", ptr);
 
-		printf("\n");
-	}
+	for (i = 0; i <= 11; i++)
+		printf("string[%2d] 의 주소 : %d\t prt+ %2d 의 값 : %d\n", i, &string[i], i, ptr + i);
+	printf("\n");
+
+	for (i = 0; i <= 11; i++)
+		printf("*(ptr +%3d) : %c (%3d) \n", i, *(ptr + i), *(ptr + i));
+	printf("\n");
+	for (i = 0; i <= 11; i++)
+		printf("ptr +%3d : %s\n", i, ptr + i);
+	printf("\n\n");
 }
