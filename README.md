@@ -1,6 +1,5 @@
 <br>
-<img src="./img/wku.png" width = "40%">
-</br>
+
 
 # Wonkwang UNIV. Visual C
 ---
